@@ -6,17 +6,18 @@ button.ngx-mat-timepicker-toggle {
 	box-shadow: none;
 }
 
+/* TODO(mdc-migration): The following rule targets internal classes of form-field that may no longer apply for the MDC version. */
 .mat-form-field-appearance-legacy .mat-form-field-prefix .ngx-mat-timepicker-toggle-default-icon,
 .mat-form-field-appearance-legacy .mat-form-field-suffix .ngx-mat-timepicker-toggle-default-icon {
 	width: 1em;
 }
 
-.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon-button .ngx-mat-timepicker-toggle-default-icon,
+.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-mdc-icon-button .ngx-mat-timepicker-toggle-default-icon,
 .mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button .ngx-mat-timepicker-toggle-default-icon {
 	margin: auto;
 }
 
-.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .ngx-mat-timepicker-toggle-default-icon,
+.mat-mdc-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .ngx-mat-timepicker-toggle-default-icon,
 .mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .ngx-mat-timepicker-toggle-default-icon {
 	display: block;
 	width: 1.5em;
