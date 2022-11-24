@@ -158,7 +158,7 @@ export class NgxMatTimepickerFieldComponent implements OnInit, OnDestroy, Contro
 
     private _color: ThemePalette = "primary";
     private _defaultTime: string;
-    private _floatLabel: FloatLabelType = "never";
+    private _floatLabel: FloatLabelType = "auto";
     private _format = 12;
     private _isDefaultTime: boolean;
     private _isFirstTimeChange: boolean = true;

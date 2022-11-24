@@ -195,7 +195,7 @@ Selector: `ngx-mat-timepicker-field`
 | @Input()
   disabled: boolean |  Whether the timepicker is disabled |
 | @Input()
-  floatLabel: 'never' or 'always' or 'auto' |  Whether the labels of the fields should float, default to never  | 
+  floatLabel: 'always' or 'auto' |  Whether the labels of the fields should float, defaults to auto | 
 | @Input()
   toggleIcon: TemplateRef\<HTMLObjectElement\> | Provide custom `svg` icon for toggle button |
 | @Input()

@@ -65,7 +65,7 @@ export class NgxMatTimepickerControlComponent implements OnChanges {
     @Input() timeUnit: NgxMatTimepickerUnits;
 
     private _color: ThemePalette = "primary";
-    private _floatLabel: FloatLabelType = "never";
+    private _floatLabel: FloatLabelType = "auto";
     private _previousTime: number;
 
     constructor(private _timeParser: NgxMatTimepickerParserPipe) {
