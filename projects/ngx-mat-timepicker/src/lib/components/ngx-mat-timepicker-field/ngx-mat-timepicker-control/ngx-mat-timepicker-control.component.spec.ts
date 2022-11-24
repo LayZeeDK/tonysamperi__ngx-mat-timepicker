@@ -6,6 +6,7 @@ import { NgxMatTimepickerParserPipe } from '../../../pipes/ngx-mat-timepicker-pa
 import { DateTime } from "ts-luxon";
 import { NgxMatTimepickerModule } from '../../../ngx-mat-timepicker.module';
 import { NgxMatTimepickerTimeFormatterPipe } from '../../../pipes/ngx-mat-timepicker-time-formatter.pipe';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('NgxMatTimepickerControlComponent', () => {
     let fixture: ComponentFixture<NgxMatTimepickerControlComponent>;
@@ -13,7 +14,10 @@ describe('NgxMatTimepickerControlComponent', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            imports: [NgxMatTimepickerModule.setLocale('ar-AE')],
+            imports: [
+                NgxMatTimepickerModule.setLocale('ar-AE'),
+                NoopAnimationsModule
+            ],
             providers: [
                 NgxMatTimepickerParserPipe,
                 NgxMatTimepickerTimeFormatterPipe
